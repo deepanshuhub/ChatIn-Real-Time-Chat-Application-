@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #FFEFB9;
+    font-family: 'Roboto', sans-serif;
+}
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #FFF5CC; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.brand {
+    padding: 20px;
+    background: #FFED99; 
+    display: flex;
+    align-items: center;
+}
+.brand h1 {
+    /*text-transform: uppercase;*/
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    background: #FFFFE0; 
+    color: #333;
+}
+.incoming {
+    color: #787986;
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+.input__container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+textarea {
+    flex: 1;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+button#sendButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background: #FFF5CC; /* Yellowish button background color */
+    color: #444;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button#sendButton:hover {
+    background: #FFDA5D; /* Hover color for the send button */
+}

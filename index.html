@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatIn chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/logo.png" alt="">
+            <h1>ChatIn</h1>
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <div class="input__container">
+                <textarea id="textarea" cols="30" rows="1" placeholder="Write a message...& Press Enter"></textarea>
+                <button id="sendButton"><img height="52" src="/button.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <audio id="pingSound" src="/sound.mp3" preload="auto"></audio>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
